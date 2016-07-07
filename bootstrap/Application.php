@@ -102,7 +102,7 @@ class Application extends Container
      */
     public function version()
     {
-        return 'Lumen (5.2.7) (Laravel Components 5.2.*)';
+        return 'SoaPhp v1.0.0 Base Lumen and Swoole';
     }
 
     /**
