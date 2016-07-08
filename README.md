@@ -37,7 +37,8 @@ run demo
 
 php demo.php
 
-# Help
+# Help | Bug
 https://github.com/foolkaka/soaphp/issues
 
-微信/QQ：786455
+微信/QQ: 786455
+Blog: https://doyouplay.net
