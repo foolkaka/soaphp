@@ -7,19 +7,12 @@ SOA这个可以很多种叫法，常见的RPC，远程方法调用，中间件�
 
 
 # 安装
+git clone https://github.com/foolkaka/soaphp.git
 pecl install swoole
-
-composer require foolkaka/soaphp
-
 composer update
 
 # demo
-start server
-
 php server.php start
-
-run demo
-
 php demo.php
 
 # Help | Bug

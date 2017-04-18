@@ -11,9 +11,9 @@ Swoole\Network\Server::start(function ()
 {
     $AppSvr = new Swoole\Protocol\SOAServer;
 
-    $server = Swoole\Network\Server::autoCreate('0.0.0.0', 8888);
+    $server = Swoole\Network\Server::autoCreate('127.0.0.1', 8888);
     $server->setProtocol($AppSvr);
-    $server->daemonize(); //作为守护进程
+    //$server->daemonize(); //作为守护进程
     $server->run(
         array(
             'worker_num' => 8,

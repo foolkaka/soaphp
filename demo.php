@@ -14,7 +14,7 @@ $cloud = Swoole\Client\SOA::getInstance();
 $cloud->setEncodeType(false, true);
 $cloud->putEnv('app', 'test');
 $cloud->putEnv('appKey', 'test1234');
-$cloud->setServers(array('10.17.112.138:8888'));
+$cloud->setServers(array('127.0.0.1:8888'));
 $ret2 = $cloud->task("Api\\Test::test1", ["hello", 'world']);
 $ret3 = $cloud->task("Api\\Test::hello");
 var_dump($ret2->getResult(), $ret3->getResult());
