@@ -11,19 +11,22 @@ class Test
 
         $app = app('app');
         $cache = app('cache');
+        
+        $cache->put('test', 'demo', 4);
 
-        $products = $app->db->select("SELECT * FROM products");
-        $cache->put('product', $products, 4);
+        //$products = $app->db->select("SELECT * FROM products");
+        //$cache->put('product', $products, 4);
+        //$c = $cache->get('product');
 
-        $c = $cache->get('product');
-        var_dump($c);
+        $test = $cache->get('test');
+        var_dump($test);
 
         /*
         app('log')->info('test', ['aaa' => $product->id]);
         */
         
         
-        return "hello-soa-finish: $str1" . " $str2 + " . $c[0]->name;
+        return "hello-soa-finish: $str1" . " $str2 + " . $app->version();
     }
 
     public function hello()
